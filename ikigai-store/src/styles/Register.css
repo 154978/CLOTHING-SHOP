@@ -1,0 +1,157 @@
+/* src/styles/Register.css */
+
+.register-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.register-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+.register-form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: none; 
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #5d53c7;
+}
+
+.terms-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.terms-checkbox-group input {
+  margin-right: 10px;
+  width: auto;
+  transform: scale(1.1);
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9800; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.create-account-button:hover {
+  background-color: #e68a00;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-link {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+
+.register-welcome-section {
+  flex: 0.8;
+  background-color: #ff9800; 
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.learn-more-button {
+  background-color: white;
+  color: #ff9800;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.learn-more-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    flex-direction: column;
+  }
+  .register-welcome-section {
+    order: -1;
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  --primary: #FF8C00;
+  --primary-dark: #cc7000;
+  --secondary: #F5F5DC;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --text-dark: var(--black);
+  --text-light: #444444;
+  --background-light: #FBF7F0;
+  --border-color: #e0e0e0;
+  --font-family-primary: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  line-height: 1.5;
+  color: var(--text-dark);
+  background-color: var(--white);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: var(--text-dark);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content-wrapper {
+  padding-top: 80px; 
+  flex-grow: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
