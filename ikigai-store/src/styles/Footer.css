@@ -1,0 +1,160 @@
+
+
+.footer-container {
+  background-color: #f7f7f7; 
+  color: #333;
+  padding-top: 50px;
+  border-top: 1px solid #eee;
+}
+
+.footer-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.brand-slogan {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-social-links a {
+  color: #5d53c7; 
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social-links a:hover {
+  color: #4a429e;
+}
+
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #777;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #5d53c7;
+}
+
+
+.newsletter-col p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  background-color: var(--primary); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #4a429e;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0;
+}
+
+
+
+@media (max-width: 992px) {
+  .footer-content-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brand-info {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-content-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+  .brand-info {
+    grid-column: span 1;
+  }
+  .footer-social-links {
+    justify-content: center;
+  }
+  .newsletter-form {
+    align-items: center;
+  }
+  .newsletter-form input,
+  .newsletter-form button {
+      width: 80%;
+  }
+}
